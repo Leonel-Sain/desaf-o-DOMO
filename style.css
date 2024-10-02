@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    font-family: Helvetica, Inter, Neue Has;
+    overflow-x: hidden;
+    color: rgba(0, 0, 0, 255);
+    cursor: none;
+}
+
+/* Cursor */
+.custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 255);
+    pointer-events: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    z-index: 10000;
+    backdrop-filter: invert(80%);
+    mix-blend-mode: difference;
+}
+
+/* Hover del Cursor */
+.custom-cursor:hover {
+    transform: scale(2);
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+/* H1 letra M */
+.h1M {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 8vh;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NavBar content*/
+.navBar {
+    font-family: Helvetica, Inter, Neue Has;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 255);
+
+}
+
+.pTxt {
+    letter-spacing: -0.5px;
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+}
+
+/* NavBar menu */
+.navLink {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 255);
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+    cursor: none;
+    z-index: 3;
+}
+
+
+/* Hover menu */
+.navLink:hover {
+    transform: translateY(-5px);
+}
+
+/*Main text*/
+.highEnd{
+    font-size: 11vw;
+    font-family: Helvetica, Inter, Neue Has;
+    margin-top: -85px;
+}
+/* Cohete img */
+.rocket {
+    color: rgba(0, 0, 0, 255);
+    width: 16vw;
+    padding: 0;
+/*     margin: 0px; */
+    transform: translateY(700px);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
+}
+/* Rayo img */
+.ray {
+    color: rgba(0, 0, 0, 255);
+    width: 8vw;
+    transform: translateY(-800px);
+    transition: transform 1s ease-out;
+}
+
+/* Main text */
+.digitalStudio {
+    font-size: 11vw;
+    font-family: Helvetica, Inter, Neue Has;
+}
+
+/* Content Footer */
+.contentFooter {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.line {
+    border: 1px solid rgba(0, 0, 0, 255);
+    opacity: .60;
+}
+/* Title leonel sain + img line */
+.titlePresent {
+    font-weight: 600;
+}
+.lineImg img {
+    max-width: 100%;
+    height: 25px;
+}
+
+/* list contact */
+.contactLink{
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    font-family: Helvetica, Inter, Neue Has;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 255);
+    text-align: end;
+}
+
+.contactLink .nav-link {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 255);
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    cursor: none;
+
+}
+
+.rcontactLink .nav-link i {
+    margin-left: 1px;
+}
+/* Hover redes contact */
+.contactLink .nav-link:hover {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: none;
+}
+
+.contactLink .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 255);
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.contactLink .nav-link:hover::after {
+    transform: scaleX(0);
+}
+
+.NameFooter {
+    font-family: Helvetica, Inter, Neue Has;
+    font-weight: 600;
+}
+
